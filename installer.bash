@@ -14,8 +14,7 @@ PROGRAMS=(
   "bison" # Task 2.1 & D1
   "flex" # Task 2.1 & D1
   "rrdtool" # Task 2.1 & D1
-  "librrd-dev" # Task 2.1 & D1
-  "argus-client" # Task 2.1 & D1
+  "librrd-dev argus-client" # Task 2.1 & D1
   "./imhex-*.deb" # Task 1C
 )
 
@@ -41,10 +40,10 @@ done
 # Install older nfdump version (Using clang-10 in our array would work if we wanted up to date)
 wget http://sourceforge.net/projects/nfdump/files/nsel/nfdump-1.5.8-NSEL/nfdump-1.5.8-NSEL.tar.gz/download
 tar xzf download
-cd /nfdump-1.5.8-NSEL
+cd nfdump-1.5.8-NSEL/
 
 # Copy downloaded files (assuming they are in the current directory)
-rm nf_common.c .
+rm nf_common.c
 rm nf_common.h .
 
 ./configure --enable-nfprofile
