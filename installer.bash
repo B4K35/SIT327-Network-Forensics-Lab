@@ -6,7 +6,7 @@ PROGRAMS=(
   "python3-pip"
   "grep" # Useful for most tasks
   "ngrep" # Useful for most tasks
-  "nmap" 
+  "nmap"
   "snort" # May or may not be useful for Task 4P
   "wireshark" # Task 1P, 1C, C1 & D2
   "tshark" # Task 3P & 5.1P
@@ -31,7 +31,7 @@ sudo apt-get upgrade -y
 # Install each program listed in the PROGRAMS array
 echo "Installing programs..."
 for PROGRAM in "${PROGRAMS[@]}"; do
-  if ! dpkg -l | grep -q "^ii  $PROGRAM "; then
+  if ! dpkg -s $PROGRAM >/dev/null 2>&1; then
     echo "Installing $PROGRAM..."
     sudo apt-get install -y $PROGRAM
   else
@@ -43,7 +43,11 @@ done
 wget http://sourceforge.net/projects/nfdump/files/nsel/nfdump-1.5.8-NSEL/nfdump-1.5.8-NSEL.tar.gz/download
 tar xzf download
 cd /nfdump-1.5.8-NSEL
-rm nf_common.c && nf_common.h # Need to replace these files with the ones downloaded in Task 2.1 & D1 manually 
+
+# Copy downloaded files (assuming they are in the current directory)
+cp nf_common.c .
+cp nf_common.h .
+
 ./configure --enable-nfprofile
 make
 make install
@@ -61,7 +65,7 @@ echo "All programs installed successfully!"
 # Optional: Verification of installations
 echo "Verifying installations..."
 for PROGRAM in "${PROGRAMS[@]}"; do
-  if command -v $PROGRAM &> /dev/null; then
+  if which $PROGRAM >/dev/null 2>&1; then
     echo "$PROGRAM is installed and working."
   else
     echo "Error: $PROGRAM is not installed correctly."
