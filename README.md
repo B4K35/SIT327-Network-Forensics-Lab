@@ -22,10 +22,10 @@ This section of the document details the steps to install and set up this networ
 
 ### Network Forensics Lab Installation
 * Open the command line interface
-* Download the installation script to your home directory.
-	* wget https://github.com/B4K35/SIT327-Network-Forensics-Lab/blob/main/installer.bash -O ~/installer.bash
-* Alternatively you can clone this repository which downloads all task resources.
+* Clone this repository which downloads all task resources.
 	* sudo apt-get update
 	* sudo apt-get install git -y
 	* git clone https://github.com/B4K35/SIT327-Network-Forensics-Lab.git
+ * Alternatively you can download the installation script to your home directory.
+	* wget https://github.com/B4K35/SIT327-Network-Forensics-Lab/blob/main/installer.bash -O ~/installer.bash
 
