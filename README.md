@@ -24,8 +24,8 @@ This section of the document details the steps to install and set up this networ
 * Open a new terminal.
 * Clone this repository which downloads all task resources.
 	* sudo apt-get update
-	* sudo apt-get install git -y
-	* git clone https://github.com/B4K35/SIT327-Network-Forensics-Lab.git
+	* sudo apt-get install gh -y
+	* gh repo clone https://github.com/B4K35/SIT327-Network-Forensics-Lab.git
  * Alternatively you can download the installation script to your home directory.
 	* wget https://github.com/B4K35/SIT327-Network-Forensics-Lab/blob/main/installer.bash -O ~/installer.bash
 
