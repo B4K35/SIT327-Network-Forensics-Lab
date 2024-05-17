@@ -21,7 +21,7 @@ This section of the document details the steps to install and set up this networ
 * Task a snapshot of the VM is taken before proceeding with the network forensics lab installation.
 
 ### Network Forensics Lab Installation
-* Open the command line interface
+* Open a new terminal.
 * Clone this repository which downloads all task resources.
 	* sudo apt-get update
 	* sudo apt-get install git -y
