@@ -6,7 +6,9 @@ This repository serves to help future students set up their Ubuntu VM's to condu
 This setup guide may also work for other Debian versions but no guarantees can be made for its success. This guide has been catered towards the use of an Ubuntu VM. This VM should satisfy the following requirements:
 
 * 64-bit Ubuntu/Debian distribution.
-* Disk capacity of at least 10 GB and memory of at least 2GB.
+* Disk capacity of at least 20 GB and memory of at least 2 GB.
+* Processor with at least 4 cores
+* Video memory of at least 64 MB
 * Internet connection.
 
 ## Installation instructions
