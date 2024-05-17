@@ -3,7 +3,6 @@
 # Define an array of programs to install
 PROGRAMS=(
   "python3"
-  "python3-pip"
   "grep" # Useful for most tasks
   "ngrep" # Useful for most tasks
   "nmap"
@@ -45,8 +44,8 @@ tar xzf download
 cd /nfdump-1.5.8-NSEL
 
 # Copy downloaded files (assuming they are in the current directory)
-cp nf_common.c .
-cp nf_common.h .
+rm nf_common.c .
+rm nf_common.h .
 
 ./configure --enable-nfprofile
 make
