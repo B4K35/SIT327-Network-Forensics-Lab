@@ -16,7 +16,7 @@ This section of the document details the steps to install and set up this networ
 * Prepare a 64 bit Ubuntu VM.
 	* install Ubuntu ISO from https://ubuntu.com/download/desktop
 	* Ensure the [requirements above](#requirements) are satisfied.
-* Ensure a snapshot of the VM is taken before proceeding with the network forensics lab setup.
+* Task a snapshot of the VM is taken before proceeding with the network forensics lab installation.
 
 ### Network Forensics Lab Installation
 * Open the command line interface
